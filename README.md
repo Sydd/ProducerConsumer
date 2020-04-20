@@ -2,8 +2,12 @@
 Producer / Consumer problem in java
 
 # Cuantos consumidores se necesitan para que el productor llegue a 0?
+1 Primera version.(Deprecated)
+-No importa cuantos consumidores tengas, al flaguearse como habilitado y no habilitado, solo uno podra tomar, y luego el productor podra volver a producir. Es decir nunca llegaras a 0.-
 
-No importa cuantos consumidores tengas, al flaguearse como habilitado y no habilitado, solo uno podra tomar, y luego el productor podra volver a producir. Es decir nunca llegaras a 0.
+20/4 UPDATE:
+
+-  Con 2 Consumidores podes consumirte todas las cervezas.
 
 # Por que hay bloques synchronized?
 
@@ -15,3 +19,4 @@ El recurso compartido en este caso, es la cerveza.
 
 - Heredando la clase thread.
 - Implementando la interfaz Runable.
+- Creando una instancia de la clase thread.
