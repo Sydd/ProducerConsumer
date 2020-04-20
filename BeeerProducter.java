@@ -10,8 +10,8 @@ public class BeeerProducter extends Thread {
 
 
     public void run(){
-        while (bh.cervezas > 0){
-             bh.AgregarCerveza();
+        while (bh.isBarOpen()) {
+            bh.AgregarCerveza();
         }
     }
 
